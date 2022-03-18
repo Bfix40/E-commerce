@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Roboto:wght@300;400;500;900&display=swap');
+@import 'mediaqueris.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.hero{
+    width: 100vw;
+    background-image: url(/img/vector-1.png);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 30px;
+
+}
+
+.navbar .brand{
+    color: #f7b736;
+}
+
+.navbar .menu{
+    grid-column: 6/9;
+    display: flex;
+    margin-top: 12px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    margin-right: 3em;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 200;
+    padding: 10px 20px;
+}
+
+.menu li a:hover{
+    background-color: #f7b736;
+    transition: all 1s;
+    color: #000;
+
+}
+
+.menu-bar{
+    display: none;
+}
+
+/*Main section*/
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.content-info{
+    margin-top: 5em;
+    color: white;   
+    margin-left: 2em;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 14px -8px rgba(0, 0, 0, .78);
+}
+
+button:hover{
+    box-shadow: none;
+
+}
+
+.btn-toBuy, .read-more{
+    background-color: #ca4172;
+    padding: 8px 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+}
+
+.read-more{
+    background: none;
+    border: 1px solid  #fff;
+    margin: 20px;
+
+}
+
+.main img {
+    margin-top: 3em;
+}
+
+/* ABOUT SECTION */
+
+.about h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: .3em;
+    margin-top: 1.7em;
+  }
+  
+  .about .divider, .wrapper .divider {
+    background-color: #ca4172;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+  }
+  
+  .about .about-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .about-info {
+    margin: 4em;
+  }
+  
+  .about .about-info h3 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  /* PRODUCTS SECTION */
+
+.wrapper h2, .sidebar span {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .wrapper .divider {
+    margin-bottom: 8em;
+  }
+  
+  .wrapper .container-products ul li, .cart ul li, .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+  .content-products-info,
+  .content-price,
+  .btn-add, .btn-remove {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-add, .btn-remove {
+    background-color: #ca4172;
+    padding: 8px 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .content-product-info {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-product-info {
+    margin-right: 20px;
+    text-align: center;
+  
+  }
+  .content-product-info h4 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrapper .content-price {
+    font-weight: lighter;
+    margin-right: 20px;
+  }
+  
+  
+  .wrapper .content-price .new-price {
+    background-color: #ca4172;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  
+  .wrapper .btn-product {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+  }
+  
+  .confirm{
+      width: 50px;
+      height: 50px;
+      background-color: #ca4172;
+      color: #fff;
+      border-radius: 10px;
+      
+  }
+
+  /* SUPPORT SECTION */
+  
+  .support {
+    margin-top: 5em;
+    background-color: #ca4172;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .support-info {
+    margin-left: 3em;
+  }
+  
+  .support h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+  }
+  
+  /*  FOOTER SECTION */
+  
+  .footer {
+    background-color: #8c50f1;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer .menu li {
+    margin-top: 20px;
+  }
+  
+  .footer .social-network .fab {
+    font-size: 1.8em;
+    margin: 10px;
+  }
+  
+  .footer .social-network .fab:hover {
+    color: #f7b733;
+  }
+  
